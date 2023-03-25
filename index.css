@@ -1,0 +1,729 @@
+*{
+/*清除元素默认的内外边距*/
+	padding: 0;
+	margin: 0;
+}
+/*清除列表样式*/
+li{
+	list-style: none;
+}
+/*设置不可见*/
+.hide{
+	visibility: hidden;
+}
+button{
+	border: none;
+}
+/*版心布局*/
+.w{
+	background: none;
+	width: 1200px;
+/*	使版心水平居中*/
+	margin: auto;
+}
+/*头部begin*/
+.header{
+/*	background-color: #f3f5f7;*/
+	height: 41px;
+	width: 1200px;
+/*	上下30px，左右居中*/
+	margin: 30px auto;
+}
+.logo{
+	float: left;
+	margin-right: 60px;
+}
+.nav{
+	float: left;
+}
+.nav ul li{
+	float: left;
+}
+.nav ul li a{
+	display: block;
+	height: 40px;
+/*	设置行高和父盒子一样就可以居中*/
+	line-height: 40px;
+	padding: 0 10px;
+	font-size: 18px;
+	color: #050505;
+/*	去掉文字下划线*/
+	text-decoration: none;
+	margin-right: 20px;
+}
+.nav ul li a:hover{
+	border-bottom: 2px solid #00a4ff;
+}
+.search{
+	float: left;
+	height: 40px;
+	width: 405px;
+}
+.search input{
+	float: left;
+	height: 40px;
+	width: 340px;
+	padding-left: 20px;
+	border: 1px solid #00a4ff;
+	border-right: none;
+
+}
+.search button{
+	float: left;
+	height: 40px;
+	width: 44px;
+	background-color: gray;
+	background: url('images/search.png');
+}
+.user{
+	float: left;
+	margin-left: 30px;
+	height: 40px;
+	width: 130px;
+	font-size: 14px;
+	color: #666;
+}
+.user ul li{
+	float: left;
+}
+.user ul li a{
+	line-height: 40px;
+	padding-left: 10px;
+	color: #666;
+	text-decoration: none;
+}
+.user ul li a:hover{
+	color: #00b4ff;
+}
+/*头部end*/
+
+/*banner 部分begin*/
+.banner{
+	overflow: hidden;
+	height: 420px;
+	background: #1c036c url('images/banner.png') no-repeat center;
+}
+.subnav{
+	height: 420px;
+	width: 150px;
+	float: left;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0 20px;
+}
+.subnav ul li a{
+	line-height: 40px;
+	display: block;
+	height: 40px;
+	color: #918da2;
+	text-decoration: none;
+}
+.subnav ul li a:hover{
+	color: #00b4ff;
+}
+.subnav ul li a span{
+	float: right;
+}
+.course{
+	float: right;
+	width: 230px;
+	height: 300px;
+	margin-top: 50px;
+}
+.course-title{
+	line-height: 48px;
+	text-align: center;
+	color: #ffffff;
+	height: 48px;
+	background-color: #9bceea;
+}
+.course-info{
+	background-color: #ffffff;
+	height: 160px;
+	padding: 20px;
+}
+.course-info ul li{
+	margin-top: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #cccccc;
+}
+.course-info ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #4e4e4e;
+}
+.course-info ul li a span{
+	font-size: 14px;
+}
+.course-info ul li a label{
+	font-size: 12px;
+	color: #cccccc;
+}
+.course-info-btn{
+	background-color: #ffffff;
+	height: 55px;
+}
+.course-info-btn a{
+	height: 40px;
+	width: 200px;
+	display: block;
+	line-height: 40px;
+	text-align: center;
+	margin-left: 13px;
+	text-decoration: none;
+	color: #00a4ff;
+	border: 1px solid #00a4ff;
+}
+.course-info-btn a:hover{
+	background-color: gray;
+	color: white;
+	border: none;
+}
+/*banner 部分end*/
+
+/*精品推荐盒子begin*/
+.boutique{
+	width: 1150px;
+	margin-top: 8px;
+	height: 60px;
+	background-color: #f3f5f7;
+	padding: 0 25px;
+/*	border: 1px solid #dcdee0;*/
+	box-shadow: 1px 1px 1px #888888;
+}
+.boutique label{
+	float: left;
+	line-height: 60px;
+	color: #42b2ff;
+}
+.boutique ul li{
+	text-align: center;
+	float: left;
+	margin-left: 20px;
+}
+
+.boutique ul li a{
+	color: #050505;
+	display: block;
+	text-decoration: none;
+	line-height: 60px;
+	font-size: 16px;
+}
+.boutique ul li a:hover{
+	color: #42b2ff;
+}
+
+.boutique ul li a span{
+	color: #050505;
+}
+.boutique span{
+	float: right;
+	line-height: 60px;
+	
+}
+.boutique span a{
+	text-decoration: none;
+	color: #42b2ff;
+	font-size: 16px;
+}
+/*精品推荐盒子end*/
+
+/*精品推荐内容begin*/
+.boutique-cotent{
+	width: 1230px;
+	height: 585px;
+/*	background-color: pink;*/
+	margin-top: 30px;
+}
+.boutique-cotent label{
+	color: #494949;
+	font-size: 20px;
+}
+.boutique-cotent span{
+	float: right;
+	padding-right: 30px;
+
+}
+.boutique-cotent span a{
+	color: #a5a5a5;
+	text-decoration: none;
+}
+.boutique-cotent ul li{
+	float: left;
+	width: 230px;
+	height: 270px;
+	background-color: #f3f5f7;
+	margin-right: 16px;
+	margin-top: 14px;
+}
+.boutique-img{
+	width: 230px;
+	height: 155px;
+	background: url('images/boutique.png')
+}
+.boutique-introduce{
+	width: 190px;
+	height: 75px;
+/*	background-color: green;*/
+	padding: 20px;
+}
+.boutique-introduce h5{
+	font-size: 14px;
+	color: #050505;
+}
+.boutique-introduce label{
+	font-size: 12px;
+	color: #ff7c2d;
+}
+.boutique-introduce span{
+	float: left;
+	font-size: 12px;
+	color: #999999;
+	margin-top: 18px;
+}
+/*精品推荐内容end*/
+
+/*编程入门begin*/
+.programme-learn{
+	width: 1200px;
+	height: 435px;
+/*	background-color: pink;*/
+	margin-top: 30px;
+}
+.programme-learn-top{
+	width: 1200px;
+	height: 40px;
+}
+.programme-learn label{
+	color: #494949;
+	font-size: 20px;
+	float: left;
+}
+.programme-learn-top ul{
+	float: left;
+	margin-left: 280px;
+}
+.programme-learn ul li{
+	height: 30px;
+	float: left;
+/*	margin: 0 auto;*/
+}
+.programme-learn ul li a{
+	line-height: 30px;
+	height: 30px;
+	padding: 0 40px;
+	text-decoration: none;
+	margin-left: 20px;
+/*	background-color: white;*/
+	display: block;
+	font-size: 16px;
+	color: #868686;
+}
+.programme-learn ul li a i{
+	color: #00a4ff;
+}
+.programme-learn span{
+	float: right;
+	padding-right: 30px;
+
+}
+.programme-learn span a{
+	color: #a5a5a5;
+	text-decoration: none;
+}
+.programme-learn-content{
+	width: 1200px;
+	height: 395px;
+/*	background-color: gray;*/
+}
+.ad-left{
+	float: left;
+	width: 227px;
+	height: 395px;
+	background: url('images/ad-left.png');
+}
+.ad-right{
+	float: right;
+	height: 395px;
+	margin-left: 15px;
+	width: 956px;
+/*	background-color: pink;*/
+}
+.ad-right-top{
+	height: 100px;
+	width: 956px;
+	margin-bottom: 23px;
+	background: url('images/ad-right-top.png');
+}
+.ad-right-bottom{
+	height: 270px;
+	width: 976px;
+/*	background-color: pink;*/
+}
+.ad-right-bottom ul li{
+	float: left;
+	width: 230px;
+	height: 270px;
+	background-color: #f3f5f7;
+	margin-right: 13px;
+/*	margin-top: 14px;*/
+}
+.ad-right-bottom-img{
+	width: 230px;
+	height: 155px;
+	background: url('images/boutique.png')
+}
+.ad-right-bottom-introduce{
+	width: 190px;
+	height: 75px;
+/*	background-color: green;*/
+	padding: 20px;
+}
+.ad-right-bottom-introduce h5{
+	font-size: 14px;
+	color: #050505;
+}
+.ad-right-bottom-introduce label{
+	font-size: 12px;
+	color: #ff7c2d;
+}
+.ad-right-bottom-introduce span{
+	float: left;
+	font-size: 12px;
+	color: #999999;
+	margin-top: 18px;
+}
+/*编程入门end*/
+
+/*这里本可直接使用上面部分的css代码，但是易于清晰方便后期添加其他东西所以复制了上面的改了类名*/
+/*数据分析师begin*/
+.analysis{
+	width: 1200px;
+	height: 435px;
+/*	background-color: pink;*/
+	margin-top: 30px;
+}
+.analysis-top{
+	width: 1200px;
+	height: 40px;
+}
+.analysis label{
+	color: #494949;
+	font-size: 20px;
+	float: left;
+}
+.analysis-top ul{
+	float: left;
+	margin-left: 260px;
+}
+.analysis ul li{
+	height: 30px;
+	float: left;
+/*	margin: 0 auto;*/
+}
+.analysis ul li a{
+	line-height: 30px;
+	height: 30px;
+	padding: 0 40px;
+	text-decoration: none;
+	margin-left: 20px;
+/*	background-color: white;*/
+	display: block;
+	font-size: 16px;
+	color: #868686;
+}
+.analysis ul li a i{
+	color: #00a4ff;
+}
+.analysis span{
+	float: right;
+	padding-right: 30px;
+
+}
+.analysis span a{
+	color: #a5a5a5;
+	text-decoration: none;
+}
+.analysis-content{
+	width: 1200px;
+	height: 395px;
+/*	background-color: gray;*/
+}
+.ad-left2{
+	float: left;
+	width: 227px;
+	height: 395px;
+	background: url('images/php.png');
+}
+.ad-right2{
+	float: right;
+	height: 395px;
+	margin-left: 15px;
+	width: 956px;
+/*	background-color: pink;*/
+}
+.ad-right-top2{
+	height: 100px;
+	width: 956px;
+	margin-bottom: 23px;
+	background: url('images/ad-right-top2.png');
+}
+.ad-right-bottom2{
+	height: 270px;
+	width: 976px;
+/*	background-color: pink;*/
+}
+.ad-right-bottom2 ul li{
+	float: left;
+	width: 230px;
+	height: 270px;
+	background-color: #f3f5f7;
+	margin-right: 13px;
+/*	margin-top: 14px;*/
+}
+.ad-right-bottom2-img{
+	width: 230px;
+	height: 155px;
+	background: url('images/boutique.png')
+}
+.ad-right-bottom2-introduce{
+	width: 190px;
+	height: 75px;
+/*	background-color: green;*/
+	padding: 20px;
+}
+.ad-right-bottom2-introduce h5{
+	font-size: 14px;
+	color: #050505;
+}
+.ad-right-bottom2-introduce label{
+	font-size: 12px;
+	color: #ff7c2d;
+}
+.ad-right-bottom2-introduce span{
+	float: left;
+	font-size: 12px;
+	color: #999999;
+	margin-top: 18px;
+}
+/*数据分析师end*/
+/*机器学习工程师begin*/
+.machine-learn{
+	width: 1200px;
+	height: 320px;
+/*	background-color: pink;*/
+	margin-top: 30px;
+}
+.machine-learn-top{
+	width: 1200px;
+	height: 40px;
+}
+.machine-learn label{
+	color: #494949;
+	font-size: 20px;
+	float: left;
+}
+.machine-learn-top ul{
+	float: left;
+	margin-left: 220px;
+}
+.machine-learn ul li{
+	height: 30px;
+	float: left;
+/*	margin: 0 auto;*/
+}
+.machine-learn ul li a{
+	line-height: 30px;
+	height: 30px;
+	padding: 0 40px;
+	text-decoration: none;
+	margin-left: 20px;
+/*	background-color: white;*/
+	display: block;
+	font-size: 16px;
+	color: #868686;
+}
+.machine-learn ul li a i{
+	color: #00a4ff;
+}
+.machine-learn span{
+	float: right;
+	padding-right: 30px;
+
+}
+.machine-learn span a{
+	color: #a5a5a5;
+	text-decoration: none;
+}
+.machine-learn-bottom{
+	width: 1230px;
+	height: 270px;
+/*	background-color: pink;*/
+}
+.machine-learn-bottom ul li{
+	float: left;
+	width: 230px;
+	height: 270px;
+	background-color: #f3f5f7;
+	margin-right: 16px;
+}
+.machine-learn-bottom-introduce{
+	width: 190px;
+	height: 75px;
+/*	background-color: green;*/
+	padding: 20px;
+}
+.machine-learn-bottom-introduce h5{
+	font-size: 14px;
+	color: #050505;
+}
+.machine-learn-bottom-introduce label{
+	font-size: 12px;
+	color: #ff7c2d;
+}
+.machine-learn-bottom-introduce span{
+	float: left;
+	font-size: 12px;
+	color: #999999;
+	margin-top: 18px;
+}
+/*机器学习工程师end*/
+/*前端开发工程师begin*/
+.front-development{
+	width: 1200px;
+	height: 320px;
+	margin-top: 30px;
+}
+.front-development-top{
+	width: 1200px;
+	height: 40px;
+}
+.front-development label{
+	color: #494949;
+	font-size: 20px;
+	float: left;
+}
+.front-development-top ul{
+	float: left;
+	margin-left: 220px;
+}
+.front-development ul li{
+	height: 30px;
+	float: left;
+/*	margin: 0 auto;*/
+}
+.front-development ul li a{
+	line-height: 30px;
+	height: 30px;
+	padding: 0 40px;
+	text-decoration: none;
+	margin-left: 20px;
+/*	background-color: white;*/
+	display: block;
+	font-size: 16px;
+	color: #868686;
+}
+.front-development ul li a i{
+	color: #00a4ff;
+}
+.front-development span{
+	float: right;
+	padding-right: 30px;
+
+}
+.front-development span a{
+	color: #a5a5a5;
+	text-decoration: none;
+}
+.front-development-bottom{
+	width: 1230px;
+	height: 270px;
+}
+.front-development-bottom ul li{
+	float: left;
+	width: 230px;
+	height: 270px;
+	background-color: #f3f5f7;
+	margin-right: 16px;
+}
+.front-development-bottom-introduce{
+	width: 190px;
+	height: 75px;
+/*	background-color: green;*/
+	padding: 20px;
+}
+.front-development-bottom-introduce h5{
+	font-size: 14px;
+	color: #050505;
+}
+.front-development-bottom-introduce label{
+	font-size: 12px;
+	color: #ff7c2d;
+}
+.front-development-bottom-introduce span{
+	float: left;
+	font-size: 12px;
+	color: #999999;
+	margin-top: 18px;
+}
+/*前端开发工程师end*/
+/*尾部部分begin*/
+.footer{
+	margin-top: 35px;
+	height: 220px;
+	background-color: #f3f5f7;
+}
+.footer-left{
+	width: 470px;
+	height: 190px;
+	float: left;
+}
+.footer-left img{
+	margin-left: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.footer-left h5{
+	font-size: 12px;
+	color: #666666;
+	margin-left: 20px;
+}
+.footer-left a{
+	display: block;
+	margin-top: 15px;
+	margin-left: 20px;
+	width: 120px;
+	height: 36px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 36px;
+	border: 1px solid #00a4ff;
+	color: #00a4ff;
+}
+.footer-left a:hover{
+	color: white;
+	background-color: #00a4ff;
+}
+.footer-right{
+	width: 620px;
+	height: 190px;
+	margin-right: 35px;
+	margin-top: 30px;
+	float: right;
+}
+.footer-right ul{
+	float: left;
+	margin-left: 120px;
+}
+.footer-right ul li a{
+	text-decoration: none;
+	font-size: 12px;
+	color: #333333;
+}
+.footer-right ul li a:hover{
+	color: #00a4ff;
+}
+.footer-right ul li h5{
+	font-size: 16px;
+	color: #333333;
+}
+/*尾部部分end*/
